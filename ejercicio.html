@@ -3,50 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
+    <div class="right">
         <p>Grandes ofertas en comederos</p>
         <ul>
-            <li>Español</li>
-            <li>$ARG</li>
+            <a href="#"> Español </a>
+            <a href="#"> ARG$ </a>
         </ul>
+    </div>
+    <nav class=logo>
         <img src="img/logo.jpg" alt="Imagen Logo">
-        <nav><!--Menú principal -->
-            <a href=""> Categorías </a>
-            <a href=""> Pets </a>
-            <a href=""> Nosotros </a>
-            <a href=""> Contactarnos </a>
-        </nav>
+        <div>
+            <a href="#"> Categorías </a>
+            <a href="#"> Pets </a>
+            <a href="#"> Nosotros </a>
+            <a href="#"> Contactarnos </a>
+        </div>
+    </nav>
     </header>
     <main>
-        <img src="" alt="Img">
-        <p>¡Es un plaser tenerte aquí!</p>
-        <p>Comederos en descuento</p>
-        <p>COMEDEROS</p>
-        
-        <img src="" alt="Logo pata">
+        <div class="header">
+            <div>
+                <p class=greet>¡Es un placer tenerte aquí!</p>
+                <p class=sub>¡Comederos en descuento!</p>
+                <a href="#">COMEDEROS</a>
+            </div>
+        </div>
+        <img src="img/pawprint.png" alt="Logo pata">
         <h2>Productos destacados</h2>
-
-        <p>Comederos - Accesorios - Comida</p>
-        <section>
-            <img src="" alt="juguete 01">
-            <p>Juguete Churrasquito</p>
-            <p>$150</p>
-        </section>
-        <section>
-            <img src="" alt="juguete 02">
-            <p>Comedero para perro</p>
-            <p>$250</p>
-        </section>
-        <section>
-            <img src="" alt="juguete 03">
-            <p>Juguete Huesito</p>
-            <p>$650</p>
-        </section>
-
+        <nav>
+            <a href="#"> Comederos - </a>
+            <a href="#"> Accesorios - </a>
+            <a href="#"> Comida </a>
+        </nav>
+        <div class="productos">
+            <section class="card">
+                <img src="img/churrasquito.png" alt="juguete 01">
+                <p>Juguete Churrasquito</p>
+                <p class="price">$150</p>
+            </section>
+            <section class="card">
+                <img src="img/comedero.png" alt="juguete 02">
+                <p>Comedero para perro</p>
+                <p class="price">$250</p>
+            </section>
+            <section class="card">
+                <img src="img/Huesito.png" alt="juguete 03">
+                <p>Juguete Huesito</p>
+                <p class="price">$650</p>
+            </section>
+        </div>
+        <div class="contactarnos">
+            <p>Contáctanos</p>
+            <form action="" class="campos">
+                <input type="text"  name="NyA" placeholder="Nombre y Apellido">
+                <input type="email" name="correo" placeholder="Ingresa tu correo electrónico">
+                <input type="tel" name="telefono" placeholder="Teléfono">
+                <div>
+                    <button type="reset" class="reset">Reset</button>
+                    <button type="submit" class="send">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
         <footer>
-            <p>Todos los derechos reservados Front End</p>
+            <div class="novedades">
+                <img src="img/enviar-correo 1.png" alt="correo">
+                <p>Suscríbete para más novedades</p>
+                <form action="">
+                    <input type="text" name="suscribe" placeholder="Ingresá tu correo electrónico">
+                    <button type="submit">Suscribirme</button>
+                </form>
+            </div>
+            <div class="contact">
+                <img class="imglogo" src="img/logo.png" alt="logo">
+                <img src="img/iconlocation.png" alt="location">
+                <p>Localidad</p>
+                <img src="img/icontel.png" alt="telephone">
+                <p>Teléfono</p>
+                <img src="img/iconmail.png" alt="mail">
+                <p>Correo Electrónico</p>
+            </div>
+            <div>
+                <p class="copyright">Todos los derechos reservados Front End</p>
+            </div>
         </footer>
     </main>
 </body>
